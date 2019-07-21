@@ -35,3 +35,25 @@ so don't have to change the code and now in terminal run manage.py `python manag
 Run the code in terminal `python manage.py runserver`
 
 ###Django models
+
+Its nothing but the oops concepts in creating blog models
+Inorder to create a blog we have to model a blog post then and the blog post should have some properties(models are nothing but oblect in oops concepts with properties and methods).
+
+But Django models are special type of models where they are saved in the database. Here sqlite is the database that we are using.
+
+for the first step is creating an application.
+
+It makes everything well organised.
+for that run the following command in the terminal. `python manage.py startapp blog`
+So the blog is created so we have to add the infomation about the app (the blog that we just created) in the settings file.
+
+The all model need for our blog have to be added to the models.py in blog
+
+When we creating a model that is nothing but a class we will pass a parameter to class definition (models.Model) which indicated its a Django model and django will understand that this should be saved in the database
+
+### Create tables for your models in the database 
+
+That simply means add the models to the database.
+ by running the code `python manage.py makemigrations blog` will make django undertand that there are some changes in the blog
+ 
+ Then follow the code to run the blog `python manage.py migrate blog`
