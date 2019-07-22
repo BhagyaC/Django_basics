@@ -57,3 +57,16 @@ That simply means add the models to the database.
  by running the code `python manage.py makemigrations blog` will make django undertand that there are some changes in the blog
  
  Then follow the code to run the blog `python manage.py migrate blog`
+ 
+ ### Django admin
+ 
+ 
+ To add , edit and delete the post that we have modeled.
+ 
+ In the admin.py add line `admin.site.register(Post)` and  don't forget to import the Post model that we defined earlier using `from .models import Post` . To make our model visible on the admin page we have to register it.
+ 
+ Now run the the server `python manage.py runserver` 
+ 
+  Type the following command in the browser http://127.0.0.1:8000/admin/ and you can see a login page but in ordr to login you may need to crete a acount in the super user 
+  
+  Inorder to create the account in superuser run the following commands `python manage.py createsuperuser`
