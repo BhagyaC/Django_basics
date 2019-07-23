@@ -70,3 +70,15 @@ That simply means add the models to the database.
   Type the following command in the browser http://127.0.0.1:8000/admin/ and you can see a login page but in ordr to login you may need to crete a acount in the super user 
   
   Inorder to create the account in superuser run the following commands `python manage.py createsuperuser`
+  
+  Once the account is created login to the admin  page and login
+Yes ! The admin page is ready you can add the text field and give a post name etc. Set atleast two of the post with published date and not all whic will help later.
+
+##Depoly
+Deploying is the process of publishing the application on the internet and everyone will be able to see it. As we know the webosite have to be sit on a server and we are using the *pythonanywhere* for the website which doesnt have too many users its free.
+
+**Setting up our blog on pythonanywhere**
+Pythonanywhere is a service for running python code on servers.Once a API token is created can configure the site on pythonanywhere dashboard. 
+confirm that pythonanywhere is installed in the environment (If not run this command in the environment`pip3 install --user pythonanywhere`).
+
+Then run the command `pa_autoconfigure_django.py  <link to git repo>`
