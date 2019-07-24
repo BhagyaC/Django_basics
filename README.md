@@ -78,7 +78,14 @@ Yes ! The admin page is ready you can add the text field and give a post name et
 Deploying is the process of publishing the application on the internet and everyone will be able to see it. As we know the webosite have to be sit on a server and we are using the *pythonanywhere* for the website which doesnt have too many users its free.
 
 **Setting up our blog on pythonanywhere**
-Pythonanywhere is a service for running python code on servers.Once a API token is created can configure the site on pythonanywhere dashboard. 
-confirm that pythonanywhere is installed in the environment (If not run this command in the environment`pip3 install --user pythonanywhere`).
+Pythonanywhere is a service for running python code on servers.Once a API token is created can configure the site on pythonanywhere dashboard. Click on the bash tab which will open a bash terminal.
+confirm that pythonanywhere is installed in the  (If not run this command in the environment`pip3 install --user pythonanywhere`).
 
-Then run the command `pa_autoconfigure_django.py  <link to git repo>`
+Then run the command `$ pa_autoconfigure_django.py https://github.com/<your-github-username>/<repo name>`
+
+After running the command you can see that the git hub is getting downloaded 
+Then creating a virtual environment in pyhton anywhere. Then updating the settings file with some deployment settigs. setting up database in pythonanywhere using `manage.py migrate` setting up the static files and configuring the python anywhere to serve the web app.
+
+So the one thing is to keep in mind is that the database of the local and the database of the python anywhere is two entirely different things so we can create two seperate admin pages for both and manage them seperatly.
+
+Once you have done this you can run the server and you can understand that its same as the running in the local machine but now its running on the server :)
