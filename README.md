@@ -110,9 +110,9 @@ Import following `from django.shortcuts import render` then add the definition a
  But there is no html page there so create `blog/templates/blog` directories and then create `post_list.html` inside that.
  
  Add the html scripts as 
- `<html>
+ ```<html>
     <body>
         <p>Hi there</p>
         <p>It works</p>
     </body>
-</html>`
+</html>```
