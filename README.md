@@ -32,31 +32,34 @@ so don't have to change the code and now in terminal run manage.py `python manag
 
 ### Webserver
 
-Run the code in terminal `python manage.py runserver`
+Run the code in terminal `python manage.py runserver` . So you can see the website running in the browser.
 
-###Django models
+### Django models
 
 Its nothing but the oops concepts in creating blog models
 In order to create a blog we have to model a blog post then and the blog post should have some properties(models are nothing but object in oops concepts with properties and methods).
 
 But Django models are a special type of model where they are saved in the database. Here SQLite is the database that we are using.
 
-the first step is creating an application.
+the first step is creating an application. It makes everything little tidy.
 
 It makes everything well organized.
 for that run the following command in the terminal. `python manage.py startapp blog`
 So the blog is created so we have to add the information about the app (the blog that we just created) in the settings file.
+Once the app is created we  have to inform Django that it should use it by adding the app name in the **INSTALLED_APP** list.
 
-The all model need for our blog has to be added to the models.py in blog
+The all model(the objects of the app) need for our blog has to be added to the models.py.
 
 When we creating a model that is nothing but a class we will pass a parameter to class definition (models.Model) which indicated its a Django model and Django will understand that this should be saved in the database
+
+It will have 
 
 ### Create tables for your models in the database 
 
 That simply means add the models to the database.
  by running the code `python manage.py makemigrations blog` will make Django understand that there are some changes in the blog
  
- Then follow the code to run the blog `python manage.py migrate blog`
+ Then follow the code to run the blog `python manage.py migrate blog` --> it will  ultimately add the model to the database.
  
  ### Django admin
  
@@ -89,3 +92,27 @@ Then create a virtual environment in python anywhere. Then update the settings f
 So the one thing is to keep in mind is that the database of the local and the database of the python anywhere is two entirely different things so we can create two separate admin pages for both and manage them separately.
 
 Once you have done this you can run the server and you can understand that its same as the running in the local machine but now it's running on the server :)
+
+### Django URL
+
+Ever page on internet need an URL. There is something called URLconf is a set of patterns where the Django try to  match
+the requested URL to find the correct view.
+
+Now we can create our own URL. along with the path from django.urls add include also then insert a line like `path('',include(blog.urls))` . Now Django will redirect everything from 'http://127.0.0.1:8000/'  to blog.urls and looks for the further instructions there.
+
+Now create a empty file named url.py in blogs folder. Add these two lines `from django.urls import path` and`from . import views ` and then ` urlpatterns = [path ('',view.post_list , name = 'post_list'),]` .Now we are assigning a view called post_list to URL .URL pattern will match the empty string and ignore the domain name .In simpler words This  pattern tells Django that view.post_list is the right place to go if someone enters the web address as http:// 120.0.0.1:8000/ the name part that defines in the URL pattern is the name that used to identify the view.
+
+we are not done yet. View is the place where we put logics for our application. Open blogs/views.py its just a pytho file were we create a definition for our post_list.
+Import following `from django.shortcuts import render` then add the definition as 
+`def post_list(request):
+       return render(request,'blog/post_list.html',{} )`
+       
+ But there is no html page there so create `blog/templates/blog` directories and then create `post_list.html` inside that.
+ 
+ Add the html scripts as 
+ ```<html>
+    <body>
+        <p>Hi there</p>
+        <p>It works</p>
+    </body>
+</html>```
