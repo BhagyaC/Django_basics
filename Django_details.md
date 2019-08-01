@@ -30,4 +30,10 @@ Purpose of Django is to make custom apps
 ## Django shell
 Open the terminal and go to the folder where the manage.py is there and in that run the command `python manage.py shell` which open a django shell.
 We can  do relative imports in the shell 
-run `python manage.py shell` . In the above case we created a app then we added some models with some featues 
+run `python manage.py shell` . In the above case we created a project then followed by creating an  app then we added the app config for the new app some models with some features and then saved the model.The app created is added to the list of installed apps in the settings.py as well as it is registered in the admin.py of the app.
+
+Once the model is created then we can run the server and go to the admin page and then we can see the app and the model that we created and then we can add as many objects for that model with defining the feature description and we can save it.
+
+The same can be easily done by the shell script by running the command `Product.objects.create(<attribute name> = <value>)`
+
+
