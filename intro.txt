@@ -1,0 +1,26 @@
+What happens when you click on a url
+
+Then the website send a request as  a packet which include the ip address of the website you want to visit
+It allows the servers to identify the website which you are looking for
+
+It connect to ISP - reroute the ip to location to the server and return the website
+the website returns it as packets and intruction to reassemble the same
+
+Full stack
+
+front end and backend
+
+front end - html css and JS (jquery and bootstrap)
+
+js helps in the interactivity otherwise it is just static
+
+backend - language , db, tech (framework)
+
+HTML introduction
+
+HTML 
+tagging
+list
+Divs and spans
+attributes
+
