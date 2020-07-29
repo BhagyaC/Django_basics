@@ -24,3 +24,8 @@ list
 Divs and spans
 attributes
 
+Basic tagging  
+
+the tags are dealing with the intentation of the text and not the line as we type in the text 
+
+
