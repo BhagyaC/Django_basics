@@ -28,4 +28,19 @@ Basic tagging
 
 the tags are dealing with the intentation of the text and not the line as we type in the text 
 
+HTML Listing
 
+we have ordered list and unordered list
+we can nest the ordered and unordered list together
+
+HTML Divs and spans
+- How to use div and spans (we use this along with css)
+- we use them to group together the block of html to apply the css to them
+- We can understand them more while learning css
+
+HTML attributes
+- html attrubutes allow us to add more information to html tags
+- THis includes things such as adding a link or referencing an image
+
+- img is a self closing tag which means it does not need any closing tag seperately
+- 
