@@ -44,3 +44,11 @@ HTML attributes
 
 - img is a self closing tag which means it does not need any closing tag seperately
 - 
+
+HTML Level 2 
+
+-  Tables - tables quiz 
+- forms 
+
+Table tag -> table head -> th the values in the header / column name -> tr the row values
+
