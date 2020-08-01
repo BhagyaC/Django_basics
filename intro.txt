@@ -1,0 +1,58 @@
+What happens when you click on a url
+
+Then the website send a request as  a packet which include the ip address of the website you want to visit
+It allows the servers to identify the website which you are looking for
+
+It connect to ISP - reroute the ip to location to the server and return the website
+the website returns it as packets and intruction to reassemble the same
+
+Full stack
+
+front end and backend
+
+front end - html css and JS (jquery and bootstrap)
+
+js helps in the interactivity otherwise it is just static
+
+backend - language , db, tech (framework)
+
+HTML introduction
+
+HTML 
+tagging
+list
+Divs and spans
+attributes
+
+Basic tagging  
+
+the tags are dealing with the intentation of the text and not the line as we type in the text 
+
+HTML Listing
+
+we have ordered list and unordered list
+we can nest the ordered and unordered list together
+
+HTML Divs and spans
+- How to use div and spans (we use this along with css)
+- we use them to group together the block of html to apply the css to them
+- We can understand them more while learning css
+
+HTML attributes
+- html attrubutes allow us to add more information to html tags
+- THis includes things such as adding a link or referencing an image
+
+- img is a self closing tag which means it does not need any closing tag seperately
+- 
+
+HTML Level 2 
+
+-  Tables - tables quiz 
+- forms 
+
+Table tag -> table head -> th the values in the header / column name -> tr the row values
+
+FORMS 
+in html it always comes with input tag
+
+forms are key component of Django
