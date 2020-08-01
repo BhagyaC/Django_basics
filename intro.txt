@@ -52,3 +52,7 @@ HTML Level 2
 
 Table tag -> table head -> th the values in the header / column name -> tr the row values
 
+FORMS 
+in html it always comes with input tag
+
+forms are key component of Django
